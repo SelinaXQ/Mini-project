@@ -2,12 +2,12 @@
 ## Performance Comparison of various TCP versions
 
 ### Experiment 1:
-### (1) Install iperf & iperf3: 
+#### (1) Install iperf & iperf3: 
 Login to node PC1 and PC2
 ```console 
 $sudo sh download.sh
 ``` 
-### (2) Setting the TCP version: 
+#### (2) Setting the TCP version: 
 Check the TCP version on PC1 and PC2 use 
 ```console 
 cat /proc/sys/net/ipv4/tcp_congestion_control
@@ -25,7 +25,7 @@ If output ‘1’, means sack is enabled; if 0, use the following command to mod
 sudo sysctl net.ipv4.tcp_sack=1
 ```
 
-### (3) Running iperf and do the experiment: 
+#### (3) Running iperf and do the experiment: 
 Use PC2 as server, run the following command on the server to wait for client connection:
 ```console 
 iperf -s
@@ -56,7 +56,7 @@ Set link parameters to 5ms delay and 0.01% packet corruption (plr = 0.0001) and 
 sudo tc qdisc add dev eth1 root netem delay 5ms corrupt 0.01%
 sudo tc qdisc add dev eth1 root netem delay 5ms corrupt 0.01%
 ```
-### Experiment 2:
+#### Experiment 2:
 Login to server and client node
 Set the delay to 50ms on server side, run 
 ```console 
@@ -70,7 +70,7 @@ Delete tc rules before change the delay, run ```console  sudo tc qdisc del dev e
 Repeat previous steps with different delay and window size.
 
 
-### Experiment 3: 
+#### Experiment 3: 
 Using instruction in Experiment 1 to select TCP flavor and change delay, loss, and corruption. 
 
 Run iperf3 on the server-side
