@@ -5,7 +5,7 @@ Run download.sh to install iperf and iperf3
 ```console 
 $sudo sh download.sh
 ```
-### Experiment 5: 
+### Experiment 3: 
 Using instruction in Experiment 1 to select TCP flavor and change delay, loss, and corruption. 
 
 Run iperf3 on the server-side
