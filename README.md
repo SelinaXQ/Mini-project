@@ -1,11 +1,12 @@
 # Mini project for CS655
+## Performance Comparison of various TCP versions
 ### Experiment 1: 
 Run download.sh to install iperf and iperf3
 ```console 
 $sudo sh download.sh
 ```
 ### Experiment 5: 
-Using instruction in Experiment 1 to select TCP flavor and change delay, loss and corruption. 
+Using instruction in Experiment 1 to select TCP flavor and change delay, loss, and corruption. 
 
 Run iperf3 on server side
 ```console 
