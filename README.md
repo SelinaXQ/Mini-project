@@ -64,9 +64,18 @@ sudo tc qdisc add dev eth1 root netem delay 50ms
 ```
 Change window size to 2KB
 
-On server side, run ```console  run iperf –s -w 2KB ``` . 
-On client side, run ```console iperf –c server ‐t 10 -w 2KB ```
-Delete tc rules before change the delay, run ```console  sudo tc qdisc del dev eth1 root ```
+On server side, run 
+```console  
+run iperf –s -w 2KB 
+``` 
+On client side, run 
+```console 
+iperf –c server ‐t 10 -w 2KB 
+```
+Delete tc rules before change the delay, run 
+```console  
+sudo tc qdisc del dev eth1 root 
+```
 Repeat previous steps with different delay and window size.
 
 
