@@ -1,0 +1,83 @@
+<rspec xmlns="http://www.geni.net/resources/rspec/3" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:tour="http://www.protogeni.net/resources/rspec/ext/apt-tour/1" xmlns:jacks="http://www.protogeni.net/resources/rspec/ext/jacks/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3    http://www.geni.net/resources/rspec/3/request.xsd" type="request">
+<node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="PC1" component_manager_id="urn:publicid:IDN+instageni.osu.edu+authority+cm" component_id="urn:publicid:IDN+instageni.osu.edu+node+pc1" sliver_id="urn:publicid:IDN+instageni.osu.edu+sliver+41722" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU14-64-STD"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pc1.instageni.osu.edu" port="28810" username="psohal"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.osu.edu" port="28810" username="qxiang"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.osu.edu" port="28810" username="matta"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.osu.edu" port="28810" username="fankai"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.osu.edu" port="28810" username="tongli18"/>
+      <emulab:console server="vhost1.shared-nodes.emulab-ops.instageni.osu.edu"/>
+    </services>
+    <interface client_id="interface-0" component_id="urn:publicid:IDN+instageni.osu.edu+interface+pc1:eth2" sliver_id="urn:publicid:IDN+instageni.osu.edu+sliver+41727" mac_address="0218a23dfbee">
+      <ip address="10.10.1.1" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+    <emulab:vnode name="pcvm1-29" hardware_type="pcvm"/>
+    <host name="PC1.xqmini1-1.ch-geni-net.instageni.osu.edu"/>
+  </node>
+<node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="PC2" component_manager_id="urn:publicid:IDN+instageni.osu.edu+authority+cm" component_id="urn:publicid:IDN+instageni.osu.edu+node+pc2" sliver_id="urn:publicid:IDN+instageni.osu.edu+sliver+41723" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU14-64-STD"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pc2.instageni.osu.edu" port="28810" username="psohal"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.osu.edu" port="28810" username="qxiang"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.osu.edu" port="28810" username="matta"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.osu.edu" port="28810" username="fankai"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.osu.edu" port="28810" username="tongli18"/>
+      <emulab:console server="vhost2.shared-nodes.emulab-ops.instageni.osu.edu"/>
+    </services>
+    <interface client_id="interface-3" component_id="urn:publicid:IDN+instageni.osu.edu+interface+pc2:eth1" sliver_id="urn:publicid:IDN+instageni.osu.edu+sliver+41731" mac_address="02300dee32c3">
+      <ip address="10.10.2.2" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+    <emulab:vnode name="pcvm2-34" hardware_type="pcvm"/>
+    <host name="PC2.xqmini1-1.ch-geni-net.instageni.osu.edu"/>
+  </node>
+<node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="delay" component_manager_id="urn:publicid:IDN+instageni.osu.edu+authority+cm" component_id="urn:publicid:IDN+instageni.osu.edu+node+pc3" sliver_id="urn:publicid:IDN+instageni.osu.edu+sliver+41724" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU14-64-STD"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pc3.instageni.osu.edu" port="28810" username="psohal"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.osu.edu" port="28810" username="qxiang"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.osu.edu" port="28810" username="matta"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.osu.edu" port="28810" username="fankai"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.osu.edu" port="28810" username="tongli18"/>
+      <emulab:console server="vhost3.shared-nodes.emulab-ops.instageni.osu.edu"/>
+    </services>
+    <interface client_id="interface-1" component_id="urn:publicid:IDN+instageni.osu.edu+interface+pc3:eth3" sliver_id="urn:publicid:IDN+instageni.osu.edu+sliver+41728" mac_address="021431b8807d">
+      <ip address="10.10.1.2" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+    <interface client_id="interface-2" component_id="urn:publicid:IDN+instageni.osu.edu+interface+pc3:eth2" sliver_id="urn:publicid:IDN+instageni.osu.edu+sliver+41730" mac_address="024615eda139">
+      <ip address="10.10.2.1" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+    <emulab:vnode name="pcvm3-3" hardware_type="pcvm"/>
+    <host name="delay.xqmini1-1.ch-geni-net.instageni.osu.edu"/>
+  </node>
+<link client_id="link-0" sliver_id="urn:publicid:IDN+instageni.osu.edu+sliver+41726" vlantag="259">
+    <interface_ref client_id="interface-0" component_id="urn:publicid:IDN+instageni.osu.edu+interface+pc1:eth2" sliver_id="urn:publicid:IDN+instageni.osu.edu+sliver+41727"/>
+    <interface_ref client_id="interface-1" component_id="urn:publicid:IDN+instageni.osu.edu+interface+pc3:eth3" sliver_id="urn:publicid:IDN+instageni.osu.edu+sliver+41728"/>
+    <component_manager name="urn:publicid:IDN+instageni.osu.edu+authority+cm"/>
+    
+    
+  <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-0" dest_id="interface-1" capacity="1000000"/>
+<property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-1" dest_id="interface-0" capacity="1000000"/>
+</link>
+<link client_id="link-1" sliver_id="urn:publicid:IDN+instageni.osu.edu+sliver+41729" vlantag="260">
+    <interface_ref client_id="interface-2" component_id="urn:publicid:IDN+instageni.osu.edu+interface+pc3:eth2" sliver_id="urn:publicid:IDN+instageni.osu.edu+sliver+41730"/>
+    <interface_ref client_id="interface-3" component_id="urn:publicid:IDN+instageni.osu.edu+interface+pc2:eth1" sliver_id="urn:publicid:IDN+instageni.osu.edu+sliver+41731"/>
+    <component_manager name="urn:publicid:IDN+instageni.osu.edu+authority+cm"/>
+    
+    
+  <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-2" dest_id="interface-3" capacity="1000000"/>
+<property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-3" dest_id="interface-2" capacity="1000000"/>
+</link>
+<rs:site_info xmlns:rs="http://www.protogeni.net/resources/rspec/ext/site-info/1">
+    <rs:location country="US" latitude="39.997135" longitude="-83.038429"/>
+  </rs:site_info>
+</rspec>
