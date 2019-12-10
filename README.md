@@ -56,7 +56,7 @@ Set link parameters to 5ms delay and 0.01% packet corruption (plr = 0.0001) and 
 sudo tc qdisc add dev eth1 root netem delay 5ms corrupt 0.01%
 sudo tc qdisc add dev eth1 root netem delay 5ms corrupt 0.01%
 ```
-#### Experiment 2:
+### Experiment 2:
 Login to server and client node
 Set the delay to 50ms on server side, run 
 ```console 
@@ -70,7 +70,7 @@ Delete tc rules before change the delay, run ```console  sudo tc qdisc del dev e
 Repeat previous steps with different delay and window size.
 
 
-#### Experiment 3: 
+### Experiment 3: 
 Using instruction in Experiment 1 to select TCP flavor and change delay, loss, and corruption. 
 
 Run iperf3 on the server-side
