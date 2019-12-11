@@ -66,7 +66,7 @@ Change window size to 2KB
 
 On server side, run 
 ```console  
-$run iperf –s -w 2KB 
+$iperf –s -w 2KB 
 ``` 
 On client side, run 
 ```console 
