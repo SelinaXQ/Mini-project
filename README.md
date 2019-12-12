@@ -73,7 +73,7 @@ $iperf –s -w 2KB
 ``` 
 On client side, run 
 ```console 
-$iperf –c server ‐t 10 -w 2KB 
+$iperf -c server -t 10 -w 2KB 
 ```
 Delete tc rules before change the delay, run 
 ```console  
