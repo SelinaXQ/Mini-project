@@ -1,6 +1,9 @@
 # Mini project for CS655
 ## Performance Comparison of various TCP versions
+### Setup Diagram:
+![setup diagram1](https://github.com/SelinaXQ/Mini-project/blob/master/archDiagram1.png)
 
+![setup diagram2](https://github.com/SelinaXQ/Mini-project/blob/master/archDiagram2.png)
 ### Experiment 1:
 #### (1) Install iperf & iperf3: 
 Login to node PC1 and PC2
